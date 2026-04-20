@@ -1,11 +1,58 @@
 ---
 const year = new Date().getFullYear();
 ---
-<footer class="border-t border-surface-200 py-10 mt-auto">
+<footer class="bg-surface-900 text-white pt-16 pb-10">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-      <p class="text-sm font-semibold text-surface-900 font-display">Your New Business</p>
-      <p class="text-sm text-surface-800/50">&copy; {year} Your New Business. All rights reserved.</p>
+    <div class="grid md:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+      <!-- Brand -->
+      <div class="md:col-span-2">
+        <a href="/" class="flex items-center gap-2.5 mb-4">
+          <span class="w-7 h-7 rounded-lg bg-brand-500 flex items-center justify-center shrink-0">
+            <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5" fill="currentColor" stroke="none"/>
+            </svg>
+          </span>
+          <span class="text-xl font-extrabold tracking-tight font-display">Roamly</span>
+        </a>
+        <p class="text-sm text-white/50 leading-relaxed max-w-xs">
+          Boutique consulting for aspiring digital nomads who want a sustainable, balanced remote life — built on a real plan.
+        </p>
+        <p class="mt-4 text-sm text-white/40 italic font-display">Live and work from anywhere — sustainably.</p>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <p class="text-xs font-semibold tracking-widest uppercase text-white/40 mb-4">Navigate</p>
+        <ul class="space-y-3">
+          <li><a href="#how-it-works" class="text-sm text-white/60 hover:text-white transition-colors">How it works</a></li>
+          <li><a href="#cta" class="text-sm text-white/60 hover:text-white transition-colors">Pricing</a></li>
+          <li><a href="/blog" class="text-sm text-white/60 hover:text-white transition-colors">Blog</a></li>
+          <li><a href="mailto:hello@roamly.co" class="text-sm text-white/60 hover:text-white transition-colors">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Topics -->
+      <div>
+        <p class="text-xs font-semibold tracking-widest uppercase text-white/40 mb-4">We cover</p>
+        <ul class="space-y-3">
+          <li><span class="text-sm text-white/60">Digital nomad visas</span></li>
+          <li><span class="text-sm text-white/60">Remote work abroad</span></li>
+          <li><span class="text-sm text-white/60">Sustainable nomad life</span></li>
+          <li><span class="text-sm text-white/60">Location independence</span></li>
+          <li><span class="text-sm text-white/60">Nomad lifestyle coaching</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <p class="text-xs text-white/30">&copy; {year} Roamly. All rights reserved.</p>
+      <div class="flex items-center gap-6">
+        <a href="/privacy" class="text-xs text-white/30 hover:text-white/60 transition-colors">Privacy Policy</a>
+        <a href="/terms" class="text-xs text-white/30 hover:text-white/60 transition-colors">Terms of Service</a>
+        <a href="mailto:hello@roamly.co" class="text-xs text-white/30 hover:text-white/60 transition-colors">hello@roamly.co</a>
+      </div>
     </div>
   </div>
 </footer>

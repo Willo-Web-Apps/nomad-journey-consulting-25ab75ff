@@ -8,7 +8,10 @@ interface Props {
   description?: string;
 }
 
-const { title = "Your New Business", description = "Consulting firm to help nomads navigate the world and start their journey and manage their journey. Make sure the business is sustainable, and monetizes in a way that is done within 4 hrs of work for me as the business owner. Engaging for nomads that are seeking a balanced lifestyle." } = Astro.props;
+const {
+  title = "Roamly — Live and work from anywhere, sustainably",
+  description = "Roamly is a boutique consulting firm helping aspiring digital nomads build a balanced, sustainable remote life — with a real plan, not just inspiration."
+} = Astro.props;
 ---
 <!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -18,14 +21,17 @@ const { title = "Your New Business", description = "Consulting firm to help noma
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
     <title>{title}</title>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Your New Business",
-      "description": "Consulting firm to help nomads navigate the world and start their journey and manage their journey. Make sure the business is sustainable, and monetizes in a way that is done within 4 hrs of work for me as the business owner. Engaging for nomads that are seeking a balanced lifestyle.",
-      "url": "https://nomad-journey-consulting.onrender.com"
+      "@type": "ProfessionalService",
+      "name": "Roamly",
+      "description": "Boutique consulting firm for aspiring and early-stage digital nomads who want to build a sustainable, balanced nomadic lifestyle.",
+      "url": "https://roamly.onrender.com",
+      "email": "hello@roamly.co",
+      "keywords": "digital nomad consulting, nomad lifestyle coaching, remote work abroad, sustainable nomad life, location independence"
     }
     </script>
   </head>
